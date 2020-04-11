@@ -34,7 +34,7 @@ public class GT4500Test {
     boolean result = ship.fireTorpedo(FiringMode.ALL);
 
     // Assert
-    assertEquals(true, result);
+    assertEquals(false, result);
   }
 
 }
