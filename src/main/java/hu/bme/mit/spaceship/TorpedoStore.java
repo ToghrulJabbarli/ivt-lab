@@ -27,6 +27,14 @@ public class TorpedoStore {
       }
     }
   }
+  
+  
+  
+  public void injectDependencies(int numberOfTorpedos, double FAILURE_RATE) {
+	    this.torpedoCount = numberOfTorpedos;
+	    this.FAILURE_RATE = FAILURE_RATE;
+	  }
+  
   Random generator = new Random();
   public boolean fire(int numOfTorpedos){
     if(numOfTorpedos < 1 || numOfTorpedos > this.torpedoCount){
